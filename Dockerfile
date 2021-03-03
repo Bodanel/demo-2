@@ -1,4 +1,4 @@
-FROM ubi8/php-72
+FROM registry.access.redhat.com/ubi8/php-72
 ADD advanced/ .
 RUN TEMPFILE=$(mktemp) && \
     curl -o "$TEMPFILE" "https://getcomposer.org/installer" && \
